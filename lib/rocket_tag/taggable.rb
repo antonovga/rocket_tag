@@ -231,7 +231,7 @@ module RocketTag
       def attr_taggable *contexts
         unless @@acts_as_rocket_tag
           include RocketTag::Taggable::InstanceMethods
-          @@acts_as_rocket_tag = true
+         # @@acts_as_rocket_tag = true
         end
 
         if contexts.blank?
